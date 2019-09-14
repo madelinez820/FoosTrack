@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/madelinez820/FoosTrack/issues"
   },
-  "homepage": "https://github.com/madelinez820/FoosTrack#readme"
+  "homepage": "https://github.com/madelinez820/FoosTrack#readme",
+  "dependencies": {
+    "http": "0.0.0"
+  }
 }
