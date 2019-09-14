@@ -1,22 +1,17 @@
 {
-  "name": "foostrack",
-  "version": "1.0.0",
-  "description": "Foosball visual reconigition tracker for HackMIT 2019",
-  "main": "index.html",
+  "name": "FoosTrack",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/madelinez820/FoosTrack.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/madelinez820/FoosTrack/issues"
-  },
-  "homepage": "https://github.com/madelinez820/FoosTrack#readme",
   "dependencies": {
-    "http": "0.0.0"
+    "chart.js": "^2.7.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0"
   }
 }
