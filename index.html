@@ -1,3 +1,4 @@
+<!-- todo: add current score, deploy, figure out how to put video in as numpy video -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,17 +17,18 @@
       <nav class="navbar navbar-light bg-light" class="-webkit-box-shadow: 0 8px 6px -6px #999;
           -moz-box-shadow: 0 8px 6px -6px #999;
           box-shadow: 0 8px 6px -6px #999;">
-              <a class="navbar-brand" href="main.html" style="color: #ffa100; font-weight: bold; font-size: 16px;">FoosTrack</a>
-              <a class="ml-auto">
-                  <a id="navbar-id-text" class="nav-link" style="color: #ffa100;" href="playerprofile.html">User</a>
-              </a>
+              <a class="navbar-brand" style="color: #ffa100; font-weight: bold; font-size: 16px;">FoosTrack</a>
 
       </nav>
   </div>
 
   <button type="button" id="pointButton" onclick = "startPointToggle()" class="btn btn-block btn-warning">Start the point!</button>
     
-      
+  <div class="video-container" background-color="black">
+    <video id="currentVideo" type="video/mp4" controls loop>
+    </video>
+  </div>
+
     <script src="js/index.js"></script>
 </body>
 </html>
