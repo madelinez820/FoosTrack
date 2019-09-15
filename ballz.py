@@ -80,6 +80,7 @@ def getBallPosition(frame, BALLSIZE):
 
 
 def markFrame(frame, BALLSIZE, lastBallPosition):
+    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     downsampledFrame = downsample(frame, 4)
     ballPosition, certainty = getBallPosition(downsampledFrame, BALLSIZE // 4)
     ballPosition = tuple([x * 4 for x in ballPosition])
