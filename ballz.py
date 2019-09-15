@@ -89,7 +89,7 @@ def markFrame(frame, BALLSIZE, lastBallPosition):
         ballPosition = lastBallPosition
     else:
         lastBallPosition = ballPosition
-    return drawSquare(frame, ballPosition, BALLSIZE), ballPosition
+    return cv2.cvtColor(drawSquare(frame, ballPosition, BALLSIZE), cv2.COLOR_RGB2BGR), ballPosition
 
 def markVideo(filename, BALLSIZE, RODSIZE):
     vidcap = cv2.VideoCapture(filename)
